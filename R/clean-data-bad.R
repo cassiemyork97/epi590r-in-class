@@ -11,7 +11,7 @@ nlsy <- read_csv("data/raw/nlsy.csv",
 								 na = c("-1", "-2", "-3", "-4", "-5", "-998"),
 								 skip = 1, col_names = nlsy_cols)
 
-nlsy <- nlsy %>%
+nlsy <- nlsy |>
 	mutate(region_cat = factor(region, labels = c("Northeast", "North Central", "South", "West")),
 				 sex_cat = factor(sex, labels = c("Male", "Female")),
 				 race_eth_cat = factor(race_eth, labels = c("Hispanic", "Black", "Non-Black, Non-Hispanic")),
