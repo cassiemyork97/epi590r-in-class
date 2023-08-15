@@ -7,10 +7,12 @@ editor: visual
 ## Renv
 
 ```{r}
+renv(init)
+install.packages("hadley/emo")
 library(renv)
+library(emo)
 emo::ji("banana")
 emo::ji("monkey")
-
 renv::status()
 renv::snapshot()
 ```
