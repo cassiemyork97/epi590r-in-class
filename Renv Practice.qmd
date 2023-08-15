@@ -1,0 +1,17 @@
+---
+title: "Renv Practice"
+format: html
+editor: visual
+---
+
+## Renv
+
+```{r}
+library(renv)
+emo::ji("banana")
+emo::ji("monkey")
+
+renv::status()
+renv::snapshot()
+```
+
